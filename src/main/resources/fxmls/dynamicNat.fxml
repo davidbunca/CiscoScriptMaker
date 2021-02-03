@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainBackground" fx:id="rootPane" minHeight="500.0" minWidth="600.0" prefHeight="500.0" prefWidth="600.0" stylesheets="@../styles/Protocols.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bunca.controllers.DynamicNatController">
+    <children>
+      <Label layoutX="238.0" layoutY="14.0" text="DYNAMIC NAT" textFill="#049cd9">
+         <font>
+            <Font name="Futura Medium" size="18.0" />
+         </font>
+      </Label>
+        <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+            <font>
+                <Font name="Futura Medium" size="13.0" />
+            </font></Button>
+        <Button id="infoButton" layoutX="556.0" layoutY="14.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" onAction="#info" prefHeight="30.0" prefWidth="30.0">
+            <font>
+                <Font name="Futura Medium" size="13.0" />
+            </font>
+        </Button>
+      <Label layoutX="38.0" layoutY="106.0" text="Start IP:" textFill="#2b5984" underline="true">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Label>
+      <TextField id="buttonWithWhiteBackground" fx:id="startField" layoutX="36.0" layoutY="124.0" prefHeight="31.0" prefWidth="160.0" promptText="Start IP">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font></TextField>
+      <Label layoutX="207.0" layoutY="106.0" text="End IP:" textFill="#2b5984" underline="true">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Label>
+      <TextField id="buttonWithWhiteBackground" fx:id="endField" layoutX="205.0" layoutY="124.0" prefHeight="31.0" prefWidth="160.0" promptText="End IP">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="372.0" layoutY="106.0" text="Prefix:" textFill="#2b5984" underline="true">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Label>
+      <ChoiceBox id="buttonWithWhiteBackground" fx:id="prefixBox" layoutX="373.0" layoutY="124.0" prefHeight="32.0" prefWidth="55.0" />
+      <Label layoutX="139.0" layoutY="224.0" text="Configuration:" textFill="#2b5984" underline="true">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Label>
+        <TextArea id="configArea" fx:id="configurationArea" layoutX="139.0" layoutY="242.0" prefHeight="200.0" prefWidth="322.0" promptText="Configuration">
+            <font>
+                <Font name="Futura Medium" size="13.0" />
+            </font></TextArea>
+        <Button id="buttonWithWhiteBackground" fx:id="copyButton" layoutX="276.0" layoutY="444.0" mnemonicParsing="false" text="Copy">
+            <font>
+                <Font name="Futura Medium" size="13.0" />
+            </font></Button>
+        <Button id="buttonWithWhiteBackground" fx:id="clearButton" layoutX="409.0" layoutY="444.0" mnemonicParsing="false" text="Clear">
+            <font>
+                <Font name="Futura Medium" size="13.0" />
+            </font></Button>
+      <Label layoutX="38.0" layoutY="56.0" text="Pool name:" textFill="#2b5984" underline="true">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Label>
+      <TextField id="buttonWithWhiteBackground" fx:id="poolNameField" layoutX="36.0" layoutY="74.0" prefHeight="31.0" prefWidth="160.0" promptText="NAT1">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="207.0" layoutY="56.0" text="ACL number/name:" textFill="#2b5984" underline="true">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Label>
+      <TextField id="buttonWithWhiteBackground" fx:id="aclNameField" layoutX="205.0" layoutY="74.0" prefHeight="31.0" prefWidth="160.0" promptText="ACL1">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </TextField>
+    </children>
+</AnchorPane>

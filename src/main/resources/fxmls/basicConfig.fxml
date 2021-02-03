@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainBackground" fx:id="rootPane" minHeight="500.0" minWidth="600.0" prefHeight="500.0" prefWidth="600.0" stylesheets="@../styles/Protocols.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bunca.controllers.BasicConfigController">
+    <children>
+        <Label layoutX="252.0" layoutY="14.0" text="BasicConfig" textFill="#049cd9">
+         <font>
+            <Font name="Futura Medium" size="18.0" />
+         </font></Label>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font></Button>
+      <Label layoutX="37.0" layoutY="51.0" text="Hostname:" textFill="#2b5984" underline="true">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Label>
+      <TextField id="buttonWithWhiteBackground" fx:id="hostnameField" layoutX="37.0" layoutY="69.0" promptText="Device">
+         <font>
+            <Font name="Futura Medium" size="12.0" />
+         </font></TextField>
+      <Label layoutX="37.0" layoutY="94.0" text="Enable password:" textFill="#2b5984" underline="true">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Label>
+      <PasswordField id="buttonWithWhiteBackground" fx:id="enablePassword" layoutX="37.0" layoutY="112.0" promptText="ciscoe">
+         <font>
+            <Font name="Futura Medium" size="12.0" />
+         </font></PasswordField>
+      <Label layoutX="218.0" layoutY="94.0" text="Config password:" textFill="#2b5984" underline="true">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Label>
+      <PasswordField id="buttonWithWhiteBackground" fx:id="linkPassword" layoutX="217.0" layoutY="112.0" promptText="ciscoc">
+         <font>
+            <Font name="Futura Medium" size="12.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="397.0" layoutY="94.0" text="Telnet password:" textFill="#2b5984" underline="true">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Label>
+      <PasswordField id="buttonWithWhiteBackground" fx:id="telnetPassword" layoutX="397.0" layoutY="112.0" promptText="ciscot">
+         <font>
+            <Font name="Futura Medium" size="12.0" />
+         </font></PasswordField>
+      <Label layoutX="37.0" layoutY="138.0" text="Baner MOTD:" textFill="#2b5984" underline="true">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Label>
+      <TextField id="buttonWithWhiteBackground" fx:id="banerField" layoutX="37.0" layoutY="156.0" prefHeight="27.0" prefWidth="422.0" promptText="Authorized users only.">
+         <font>
+            <Font name="Futura Medium" size="12.0" />
+         </font></TextField>
+      <Label layoutX="139.0" layoutY="183.0" text="Configuration:" textFill="#2b5984" underline="true">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Label>
+        <TextArea id="configArea" fx:id="configuration" layoutX="139.0" layoutY="201.0" prefHeight="251.0" prefWidth="322.0" promptText="Configuration">
+         <font>
+            <Font name="Futura Medium" size="12.0" />
+         </font></TextArea>
+        <Button id="buttonWithWhiteBackground" fx:id="copyButton" layoutX="276.0" layoutY="454.0" mnemonicParsing="false" text="Copy">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font></Button>
+        <Button id="buttonWithWhiteBackground" fx:id="clearButton" layoutX="410.0" layoutY="454.0" mnemonicParsing="false" text="Clear">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font></Button>
+    </children>
+</AnchorPane>

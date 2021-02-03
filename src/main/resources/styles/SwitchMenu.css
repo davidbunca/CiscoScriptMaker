@@ -1,0 +1,33 @@
+#mainBackground{
+    -fx-background-image: url("../images/mainBackground.png");
+    -fx-background-color: white;
+}
+
+#backButton{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/backOFF.png");
+    -fx-background-size: 30px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 100%;
+}
+#backButton:hover{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/backON.png");
+    -fx-background-size: 30px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 100%;
+}
+
+#buttonWithWhiteBackground{
+    -fx-background-color: white;
+    -fx-background-radius: 22 22 22 22;
+    -fx-background-insets: 0;
+    -fx-text-fill: #049cd9;
+    -fx-border-color: #2b5984;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20 20 20 20;
+}
+#buttonWithWhiteBackground:hover{
+    -fx-background-color: whitesmoke;
+}
+

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainBackground" fx:id="rootPane" minHeight="500.0" minWidth="600.0" prefHeight="500.0" prefWidth="600.0" stylesheets="@../styles/Protocols.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bunca.controllers.EigrpProtocolController">
+    <children>
+      <Label layoutX="275.0" layoutY="14.0" text="EIGRP" textFill="#049cd9">
+         <font>
+            <Font name="Futura Medium" size="18.0" />
+         </font>
+      </Label>
+        <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font></Button>
+      <Button id="infoButton" layoutX="556.0" layoutY="14.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" onAction="#info" prefHeight="30.0" prefWidth="30.0">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="40.0" layoutY="55.0" text="Process number:" textFill="#2b5984" underline="true">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Label>
+      <TextField id="buttonWithWhiteBackground" fx:id="processField" layoutX="40.0" layoutY="73.0" prefHeight="31.0" prefWidth="171.0" promptText="Process number" />
+      <Label fx:id="networkLabel" layoutX="40.0" layoutY="102.0" text="Network:" textFill="#2b5984" underline="true">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Label>
+        <TextField id="buttonWithWhiteBackground" fx:id="networkField" layoutX="40.0" layoutY="120.0" promptText="Network">
+         <font>
+            <Font name="Futura Medium" size="12.0" />
+         </font></TextField>
+      <Button id="addButtonBlue" fx:id="addNetworkButton" layoutX="214.0" layoutY="119.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font></Button>
+        <CheckBox id="tfBox" fx:id="summarisationBox" layoutX="41.0" layoutY="150.0" mnemonicParsing="false" text="Auto-Summarisation" textFill="#2b5984">
+         <font>
+            <Font name="Futura Medium" size="12.0" />
+         </font></CheckBox>
+        <ToggleButton id="buttonWithWhiteBackground" fx:id="ipv6Button" layoutX="40.0" layoutY="171.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="55.0" text="IPv4">
+            <toggleGroup>
+                <ToggleGroup fx:id="u" />
+            </toggleGroup>
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font></ToggleButton>
+      <Label fx:id="interfaceLabel" layoutX="253.0" layoutY="55.0" text="Interface:" textFill="#2b5984" underline="true" visible="false">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Label>
+        <ChoiceBox id="buttonWithWhiteBackground" fx:id="interfaceBox" layoutX="251.0" layoutY="73.0" prefHeight="27.0" prefWidth="160.0" visible="false" />
+        <ChoiceBox id="buttonWithWhiteBackground" fx:id="portNumberBox" layoutX="417.0" layoutY="73.0" prefHeight="27.0" prefWidth="42.0" visible="false" />
+        <Label fx:id="slash" layoutX="467.0" layoutY="74.0" text="/" textFill="#2b5984" visible="false">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <ChoiceBox id="buttonWithWhiteBackground" fx:id="portNumberBox2" layoutX="475.0" layoutY="73.0" prefHeight="27.0" prefWidth="42.0" visible="false" />
+        <Label fx:id="serialSlash" layoutX="524.0" layoutY="74.0" text="/" textFill="#2b5984" visible="false">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <ChoiceBox id="buttonWithWhiteBackground" fx:id="portNumberBox3" layoutX="531.0" layoutY="73.0" prefHeight="27.0" prefWidth="42.0" visible="false" />
+      <Button id="addButtonWhite" fx:id="addInterfaceButton" layoutX="487.0" layoutY="116.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" visible="false" />
+      <Label layoutX="139.0" layoutY="223.0" text="Configuration:" textFill="#2b5984" underline="true">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Label>
+        <TextArea id="configArea" fx:id="configurationArea" layoutX="139.0" layoutY="241.0" prefHeight="200.0" prefWidth="322.0" promptText="Configuration">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font></TextArea>
+        <Button id="buttonWithWhiteBackground" fx:id="copyButton" layoutX="276.0" layoutY="443.0" mnemonicParsing="false" text="Copy">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font></Button>
+      <Button id="buttonWithWhiteBackground" fx:id="clearButton" layoutX="410.0" layoutY="443.0" mnemonicParsing="false" text="Clear">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font></Button>
+
+    </children>
+</AnchorPane>

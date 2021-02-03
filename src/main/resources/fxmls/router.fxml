@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainBackground" fx:id="rootPane" minHeight="500.0" minWidth="600.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@../styles/RouterMenu.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bunca.controllers.RouterController">
+    <children>
+        <Button id="buttonWithWhiteBackground" fx:id="basicConfigButton" layoutX="144.0" layoutY="376.0" minWidth="100.0" mnemonicParsing="false" prefWidth="100.0" text="BasicConfig">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font></Button>
+        <Button id="buttonWithWhiteBackground" fx:id="interfaceButton" layoutX="254.0" layoutY="263.0" minWidth="100.0" mnemonicParsing="false" prefWidth="100.0" text="Interface">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font></Button>
+      <Button id="buttonWithWhiteBackground" fx:id="ripButton" layoutX="360.0" layoutY="150.0" minWidth="100.0" mnemonicParsing="false" prefWidth="100.0" text="RIP">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font></Button>
+      <Button id="backButton" fx:id="backButton" layoutX="14.0" layoutY="14.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="144.0" layoutY="100.0" text="SCRIPT MAKER" textAlignment="CENTER" textFill="#049cd9">
+         <font>
+            <Font name="Futura Medium" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="83.0" fitWidth="130.0" layoutX="61.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/router.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="94.0" layoutY="229.0" text="Router" textAlignment="CENTER" textFill="#2b5984">
+         <font>
+            <Font name="Futura Medium" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="83.0" fitWidth="158.0" layoutX="143.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/cisco-logo.png" />
+         </image>
+      </ImageView>
+      <Button id="buttonWithWhiteBackground" fx:id="staticRoutingButton" layoutX="470.0" layoutY="150.0" minWidth="100.0" mnemonicParsing="false" prefWidth="100.0" text="StaticRouting">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Button>
+      <Button id="buttonWithWhiteBackground" fx:id="eigrpButton" layoutX="360.0" layoutY="184.0" minWidth="100.0" mnemonicParsing="false" prefWidth="100.0" text="EIGRP">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Button>
+      <Button id="buttonWithWhiteBackground" fx:id="ospfv2Button" layoutX="470.0" layoutY="184.0" minWidth="100.0" mnemonicParsing="false" prefWidth="100.0" text="OSPFv2">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="361.0" layoutY="116.0" prefHeight="27.0" prefWidth="212.0" text="ROUTING:" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Futura Medium" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="254.0" layoutY="229.0" prefHeight="27.0" prefWidth="212.0" text="INTERFACE:" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Futura Medium" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="147.0" layoutY="342.0" prefHeight="27.0" prefWidth="212.0" text="OTHER:" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Futura Medium" size="18.0" />
+         </font>
+      </Label>
+      <Button id="buttonWithWhiteBackground" fx:id="standAclButton" layoutX="249.0" layoutY="376.0" minWidth="100.0" mnemonicParsing="false" prefWidth="100.0" text="StandACL">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Button>
+      <Button id="buttonWithWhiteBackground" fx:id="extAclButton" layoutX="144.0" layoutY="410.0" minWidth="100.0" mnemonicParsing="false" prefWidth="100.0" text="ExtendACL">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Button>
+      <Button id="buttonWithWhiteBackground" fx:id="staticNat" layoutX="364.0" layoutY="263.0" minWidth="100.0" mnemonicParsing="false" prefWidth="100.0" text="StaticNAT">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Button>
+      <Button id="buttonWithWhiteBackground" fx:id="dynamicNat" layoutX="254.0" layoutY="299.0" minWidth="100.0" mnemonicParsing="false" prefWidth="100.0" text="DynaNAT">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

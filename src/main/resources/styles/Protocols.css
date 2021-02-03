@@ -1,0 +1,145 @@
+#mainBackground{
+    -fx-background-color: white;
+    -fx-background-image: url("../images/mainBackground.png");
+}
+
+#backButton{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/backOFF.png");
+    -fx-background-size: 30px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 100%;
+}
+#backButton:hover{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/backON.png");
+    -fx-background-size: 30px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 100%;
+}
+
+#infoButton{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/infoOFF.png");
+    -fx-background-size: 30px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 100%;
+}
+#infoButton:hover{
+    -fx-background-image: url("../images/infoON.png");
+    -fx-background-size: 30px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 100%;
+}
+
+#addButtonWhite{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/addOFFw.png");
+    -fx-background-size: 30px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 85%;
+}
+#addButtonBlue{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/addOFFb.png");
+    -fx-background-size: 30px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 85%;
+}
+#addButtonWhite:hover{
+    -fx-background-image: url("../images/addON.png");
+    -fx-background-size: 30px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 85%;
+}
+#addButtonBlue:hover{
+    -fx-background-image: url("../images/addON.png");
+    -fx-background-size: 30px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 85%;
+}
+
+#buttonWithWhiteBackground{
+    -fx-background-color: white;
+    -fx-background-radius: 22 22 22 22;
+    -fx-background-insets: 0;
+    -fx-text-fill: #049cd9;
+    -fx-border-color: #2b5984;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20 20 20 20;
+}
+#buttonWithWhiteBackground:hover{
+    -fx-background-color: whitesmoke;
+}
+#buttonWithWhiteBackground > .label{
+    -fx-text-fill: #049cd9;
+    -fx-font-family: "Futura Medium";
+}
+
+#areaWithWhiteBackground{
+    -fx-background-color: white;
+    -fx-background-radius: 20 20 20 20;
+    -fx-background-insets: 0;
+    -fx-text-fill: #049cd9;
+    -fx-border-color: #2b5984;
+    -fx-border-width: 2px;
+    -fx-border-radius: 15 15 15 15;
+}
+#areaWithWhiteBackground:hover{
+    -fx-background-color: whitesmoke;
+}
+#areaWithWhiteBackground .scroll-pane {
+    -fx-background-color: transparent;
+}
+#areaWithWhiteBackground .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+#areaWithWhiteBackground .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+#configArea{
+    -fx-background-color: white;
+    -fx-background-radius: 20 20 20 20;
+    -fx-background-insets: 0;
+    -fx-text-fill: #000;
+    -fx-border-color: #2b5984;
+    -fx-border-width: 2px;
+    -fx-border-radius: 15 15 15 15;
+}
+#configArea:hover{
+    -fx-background-color: whitesmoke;
+}
+#configArea .scroll-pane {
+    -fx-background-color: transparent;
+}
+#configArea .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+#configArea .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+#tfBox{
+    -fx-font-family: "Futura Medium";
+}
+#tfBox:hover .box{
+    -fx-background-color: whitesmoke;
+}
+#tfBox .box{
+    -fx-background-color: white;
+    -fx-background-radius: 6 6 6 6;
+    -fx-background-insets: 0;
+    -fx-border-color: #2b5984;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5 5 5 5;
+}
+#tfBox:selected .mark{
+    -fx-background-color: #049cd9;
+}
+#tfBox:selected .box{
+    -fx-background-color: whitesmoke;
+}
+
+
+

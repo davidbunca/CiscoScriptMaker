@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainBackground" fx:id="rootPane" minHeight="500.0" minWidth="600.0" prefHeight="500.0" prefWidth="600.0" stylesheets="@../styles/Protocols.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bunca.controllers.VTPProtoclController">
+    <children>
+      <Label layoutX="276.0" layoutY="14.0" text="VTPv2" textFill="#049cd9">
+         <font>
+            <Font name="Futura Medium" size="18.0" />
+         </font>
+      </Label>
+        <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+            <font>
+                <Font name="Futura Medium" size="13.0" />
+            </font></Button>
+      <Button id="infoButton" fx:id="backButton1" layoutX="556.0" layoutY="14.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" onAction="#info" prefHeight="30.0" prefWidth="30.0">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="30.0" layoutY="56.0" text="VTP mode:" textFill="#2b5984" underline="true">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Label>
+        <ChoiceBox id="buttonWithWhiteBackground" fx:id="modeBox" layoutX="29.0" layoutY="74.0" prefHeight="27.0" prefWidth="117.0" />
+      <Label layoutX="30.0" layoutY="103.0" text="VTP domain:" textFill="#2b5984" underline="true">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Label>
+        <TextField id="buttonWithWhiteBackground" fx:id="domainField" layoutX="30.0" layoutY="121.0" prefHeight="32.0" prefWidth="186.0" promptText="VTP domain">
+            <font>
+                <Font name="Futura Medium" size="13.0" />
+            </font></TextField>
+      <Label layoutX="30.0" layoutY="151.0" text="VTP password:" textFill="#2b5984" underline="true">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Label>
+      <PasswordField id="buttonWithWhiteBackground" fx:id="vtpPassField" layoutX="30.0" layoutY="169.0" promptText="VTP password">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="139.0" layoutY="223.0" text="Configuration:" textFill="#2b5984" underline="true">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Label>
+        <TextArea id="configArea" fx:id="configurationArea" layoutX="139.0" layoutY="241.0" prefHeight="200.0" prefWidth="322.0" promptText="Configuration">
+            <font>
+                <Font name="Futura Medium" size="13.0" />
+            </font></TextArea>
+        <Button id="buttonWithWhiteBackground" fx:id="copyButton" layoutX="276.0" layoutY="443.0" mnemonicParsing="false" text="Copy">
+            <font>
+                <Font name="Futura Medium" size="13.0" />
+            </font></Button>
+        <Button id="buttonWithWhiteBackground" fx:id="clearButton" layoutX="409.0" layoutY="443.0" mnemonicParsing="false" text="Clear">
+            <font>
+                <Font name="Futura Medium" size="13.0" />
+            </font></Button>
+    </children>
+</AnchorPane>
