@@ -18,7 +18,7 @@ public class RouterController implements Initializable {
     AnchorPane rootPane;
 
     @FXML
-    Button interfaceButton, basicConfigButton, ripButton, eigrpButton, ospfv2Button, backButton, staticRoutingButton, standAclButton, extAclButton, staticNat, dynamicNat;
+    Button interfaceButton, basicConfigButton, ripButton, eigrpButton, ospfv2Button, backButton, staticRoutingButton, standAclButton, extAclButton, dhcpButton, staticNatButton, dynamicNatButton;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -46,7 +46,7 @@ public class RouterController implements Initializable {
                 rootPane.getChildren().setAll(pane);
             }
         });
-        staticNat.setOnAction(new EventHandler<ActionEvent>() {
+        staticNatButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 AnchorPane pane = null;
@@ -58,12 +58,25 @@ public class RouterController implements Initializable {
                 rootPane.getChildren().setAll(pane);
             }
         });
-        dynamicNat.setOnAction(new EventHandler<ActionEvent>() {
+        dynamicNatButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 AnchorPane pane = null;
                 try {
                     pane = FXMLLoader.load(getClass().getResource("/fxmls/dynamicNat.fxml"));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                rootPane.getChildren().setAll(pane);
+            }
+        });
+
+        dhcpButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                AnchorPane pane = null;
+                try {
+                    pane = FXMLLoader.load(getClass().getResource("/fxmls/dhcp.fxml"));
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
