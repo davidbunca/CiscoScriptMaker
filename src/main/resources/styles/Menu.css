@@ -3,6 +3,7 @@
     -fx-background-image: url("../images/mainBackground.png");
     -fx-background-color: white;
 }
+
 #deviceImage{
 
 }
@@ -24,3 +25,4 @@
 #buttonWithWhiteBackground:hover{
     -fx-background-color: whitesmoke;
 }
+

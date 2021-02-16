@@ -55,7 +55,7 @@ public class DHCP {
         }
         configuration += "domain-name " + domainName + "\n";
         if (dnsServers.size() != 0) {
-            configuration += "dns server ";
+            configuration += "dns-server ";
             for (String serverIp : dnsServers) {
                 configuration += serverIp + " ";
             }
